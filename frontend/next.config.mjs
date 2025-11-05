@@ -4,9 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // If deploying to a project page (not username.github.io), uncomment and set your repo name:
-  // basePath: '/Planning-for-job-portal',
-  // trailingSlash: true,
+  // Required for GitHub Pages project sites (not username.github.io)
+  basePath: '/Planning-for-job-portal',
+  trailingSlash: true,
 };
 
 export default nextConfig;
