@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Palette, FileText, ArrowRight, Building2, Heart, Stethoscope, Sparkles, Terminal, Star, Anchor } from "lucide-react";
+import { Palette, FileText, ArrowRight, Building2, Heart, Stethoscope, Sparkles, Terminal, Star, Anchor, Leaf } from "lucide-react";
 
 export default function Home() {
   const themeMockups = [
@@ -62,6 +62,16 @@ export default function Home() {
       gradient: "from-cyan-400 to-blue-500",
       route: "/ocean",
       features: ["Floating Animations", "Marine Aesthetic", "Underwater Theme"]
+    },
+    {
+      id: "solarpunk",
+      name: "GreenCareers",
+      description: "Solarpunk aesthetic with green and yellow gradients, nature-inspired design, and regenerative terminology. Perfect for purpose-driven professionals seeking sustainable careers.",
+      color: "green",
+      icon: Leaf,
+      gradient: "from-green-500 to-yellow-500",
+      route: "/solarpunk",
+      features: ["Purpose-Driven Vision Generator", "Regenerative Aesthetic", "Sustainable Career Focus"]
     }
   ];
 
