@@ -277,6 +277,25 @@ export default function Home() {
                 </div>
               </div>
             </Link>
+
+            <Link
+              href="/career-harmony/job-applications-management"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Job Applications Management
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Employer view for managing applications with status tracking, filtering, and applicant details.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
           </div>
         </section>
 
