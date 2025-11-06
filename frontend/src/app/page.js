@@ -159,17 +159,124 @@ export default function Home() {
             </div>
             <div>
               <h2 className="text-2xl font-bold text-gray-900">Page Mockups</h2>
-              <p className="text-gray-600">Once a theme is selected, individual page mockups will appear here.</p>
+              <p className="text-gray-600">Career Harmony theme page designs. Click any page to view the full mockup.</p>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg border-2 border-dashed border-gray-300 p-12 text-center">
-            <FileText className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-gray-600 mb-2">No Page Mockups Yet</h3>
-            <p className="text-gray-500 max-w-md mx-auto">
-              Page mockups will be added here after theme selection. This section will include designs for 
-              login pages, dashboards, job listings, and other key pages.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link
+              href="/solarpunk"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Career Harmony Landing Page
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Main landing page with hero section, healthy reminders generator, and job listings showcase.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/career-harmony/login"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Login Page
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Welcome back experience with supportive messaging and gentle form design.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/career-harmony/signup"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Sign Up Page
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Community onboarding with account type selection and privacy promise.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/career-harmony/dashboard"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Job Seeker Dashboard
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Personalized dashboard with healthy reminders, application tracking, and recommendations.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/career-harmony/profile"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Job Seeker Profile
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Profile builder focused on empowerment and authentic storytelling.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/career-harmony/job-search"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Job Search Page
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Search interface with filters, job listings, save functionality, and supportive messaging.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
           </div>
         </section>
 
