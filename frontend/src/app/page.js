@@ -65,13 +65,13 @@ export default function Home() {
     },
     {
       id: "solarpunk",
-      name: "GreenCareers",
-      description: "Solarpunk aesthetic with green and yellow gradients, nature-inspired design, and regenerative terminology. Perfect for purpose-driven professionals seeking sustainable careers.",
+      name: "Career Harmony",
+      description: "Work-life balance focused design with green and yellow gradients and nature-inspired aesthetics. For anyone seeking careers that honor their whole self—no sacrifice required.",
       color: "green",
       icon: Leaf,
       gradient: "from-green-500 to-yellow-500",
       route: "/solarpunk",
-      features: ["Purpose-Driven Vision Generator", "Regenerative Aesthetic", "Sustainable Career Focus"]
+      features: ["Work-Life Balance Focus", "Dignity-Preserving Approach", "Harmony-Centered Design"]
     }
   ];
 

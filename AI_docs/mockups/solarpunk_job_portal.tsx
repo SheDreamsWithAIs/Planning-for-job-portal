@@ -1,9 +1,7 @@
-'use client';
-
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Search, Users, TrendingUp, ArrowRight, Building2, Award, Target, RefreshCw, Zap, Globe, Leaf, Sun } from 'lucide-react';
 
-export default function CareerHarmony() {
+const CareerHarmony = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [location, setLocation] = useState('');
 
@@ -112,7 +110,7 @@ export default function CareerHarmony() {
                 <div className="flex-1 relative">
                   <input
                     type="text"
-                    placeholder='Location (City, State)'
+                    placeholder="Location (City, State)"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                     className="w-full px-4 py-3 border border-green-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent text-lg bg-white/80"
@@ -126,7 +124,7 @@ export default function CareerHarmony() {
               </div>
             </div>
 
-            {/* Inspiration Generator */}
+            {/* Healthy Reminders Generator */}
             <div className="bg-white/70 backdrop-blur-sm rounded-xl shadow-md border border-green-200 p-6 max-w-2xl mx-auto mb-8">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold text-green-800">Healthy Reminders™</h3>
@@ -269,7 +267,7 @@ export default function CareerHarmony() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-green-200 p-8 hover:shadow-md transition-all">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-yellow-100 rounded-xl flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-amber-100 rounded-xl flex items-center justify-center mb-6">
                 <TrendingUp className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-green-900 mb-4">Purpose-Driven Talent Matching</h3>
@@ -282,7 +280,7 @@ export default function CareerHarmony() {
             </div>
 
             <div className="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-green-200 p-8 hover:shadow-md transition-all">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-yellow-100 rounded-xl flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-amber-100 rounded-xl flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-green-900 mb-4">Community-Centered Networks</h3>
@@ -386,5 +384,6 @@ export default function CareerHarmony() {
       </footer>
     </div>
   );
-}
+};
 
+export default CareerHarmony;
