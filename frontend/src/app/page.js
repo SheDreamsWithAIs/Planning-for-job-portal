@@ -296,6 +296,82 @@ export default function Home() {
                 </div>
               </div>
             </Link>
+
+            <Link
+              href="/career-harmony/company-registration"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Company Registration
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Multi-step employer registration with account creation, company profile, and preview.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/career-harmony/employer-dashboard"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Employer Dashboard
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Employer dashboard with job postings overview, applications, interviews, and hiring wisdom reminders.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/career-harmony/job-posting"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Job Posting Form
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Create job postings with templates, auto-save, and comprehensive job details form.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/career-harmony/job-application-setup"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Job Application Setup
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Configure application methods, screening questions, and compliance settings.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
           </div>
         </section>
 
