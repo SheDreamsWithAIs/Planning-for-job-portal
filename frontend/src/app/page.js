@@ -70,7 +70,7 @@ export default function Home() {
       color: "green",
       icon: Leaf,
       gradient: "from-green-500 to-yellow-500",
-      route: "/solarpunk",
+      route: "/career-harmony/home",
       features: ["Work-Life Balance Focus", "Dignity-Preserving Approach", "Harmony-Centered Design"]
     }
   ];
@@ -165,7 +165,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link
-              href="/solarpunk"
+              href="/career-harmony/home"
               className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
               <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
@@ -370,9 +370,47 @@ export default function Home() {
                   View Mockup
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </div>
+        </div>
+            </Link>
+
+            <Link
+              href="/career-harmony/job-application"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Job Application Form
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Multi-step application form with profile info, experience, questions, EEO, and review.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
               </div>
             </Link>
-          </div>
+
+            <Link
+              href="/career-harmony/chatbot"
+              className="group bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="h-2 bg-gradient-to-r from-green-500 to-amber-500" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
+                  Harmony AI Chatbot
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  AI career companion chatbot with supportive messaging and career guidance.
+                </p>
+                <div className="flex items-center text-green-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                  View Mockup
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </div>
+              </div>
+            </Link>
+        </div>
         </section>
 
         {/* Instructions Section */}

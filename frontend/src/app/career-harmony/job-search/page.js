@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Search, MapPin, Calendar, DollarSign, Bookmark, BookmarkCheck, Building2, Users, Clock, SlidersHorizontal, Heart, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import CareerHarmonyHeader from '@/components/CareerHarmony/Header';
 import CareerHarmonyFooter from '@/components/CareerHarmony/Footer';
@@ -565,9 +566,9 @@ export default function JobSearchPage() {
                         </div>
                       ) : (
                         <>
-                          <button className="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-2 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all flex items-center justify-center">
+                          <Link href="/career-harmony/job-application" className="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-2 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all flex items-center justify-center">
                             Apply Now
-                          </button>
+                          </Link>
                           <button className="bg-amber-100 text-green-700 border border-green-300 px-6 py-2 rounded-lg font-medium hover:bg-amber-200 transition-all">
                             Learn More
                           </button>

@@ -57,10 +57,10 @@ export default function DashboardPage() {
               Quality over quantity 
               <Heart className="w-3 h-3 ml-1 text-green-500" />
             </p>
-            <button className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-2 px-4 rounded-lg font-medium hover:from-green-700 hover:to-green-800 transition-all flex items-center justify-center text-sm">
+            <Link href="/career-harmony/job-search" className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-2 px-4 rounded-lg font-medium hover:from-green-700 hover:to-green-800 transition-all flex items-center justify-center text-sm">
               <Search className="w-4 h-4 mr-2" />
               Search New Jobs
-            </button>
+            </Link>
           </div>
           
           <div className="bg-white/70 backdrop-blur-sm rounded-xl border border-green-200 p-6">
@@ -89,10 +89,10 @@ export default function DashboardPage() {
               People notice you 
               <Star className="w-3 h-3 ml-1 text-amber-500" />
             </p>
-            <button className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-2 px-4 rounded-lg font-medium hover:from-green-700 hover:to-green-800 transition-all flex items-center justify-center text-sm">
+            <Link href="/career-harmony/profile" className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-2 px-4 rounded-lg font-medium hover:from-green-700 hover:to-green-800 transition-all flex items-center justify-center text-sm">
               <FileText className="w-4 h-4 mr-2" />
               Update Profile
-            </button>
+            </Link>
           </div>
           
           <div className="bg-white/70 backdrop-blur-sm rounded-xl border border-green-200 p-6">
@@ -105,10 +105,10 @@ export default function DashboardPage() {
               Great opportunities waiting!
               <TrendingUp className="w-3 h-3 ml-1 text-green-500" />
             </p>
-            <button className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-2 px-4 rounded-lg font-medium hover:from-green-700 hover:to-green-800 transition-all flex items-center justify-center text-sm">
+            <Link href="/career-harmony/job-search" className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white py-2 px-4 rounded-lg font-medium hover:from-green-700 hover:to-green-800 transition-all flex items-center justify-center text-sm">
               <Star className="w-4 h-4 mr-2" />
               View Matches
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -116,9 +116,9 @@ export default function DashboardPage() {
           <div className="bg-white/70 backdrop-blur-sm rounded-xl border border-green-200 p-6">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-xl font-bold text-green-900">Your Applications</h2>
-              <button className="text-green-700 hover:text-green-800 font-medium transition-colors">
+              <Link href="/career-harmony/job-applications-management" className="text-green-700 hover:text-green-800 font-medium transition-colors">
                 View All
-              </button>
+              </Link>
             </div>
             
             <div className="space-y-4">
@@ -152,9 +152,9 @@ export default function DashboardPage() {
           <div className="bg-white/70 backdrop-blur-sm rounded-xl border border-green-200 p-6">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-xl font-bold text-green-900">Recommended for You</h2>
-              <button className="text-green-700 hover:text-green-800 font-medium transition-colors">
+              <Link href="/career-harmony/job-search" className="text-green-700 hover:text-green-800 font-medium transition-colors">
                 See More
-              </button>
+              </Link>
             </div>
             
             <div className="space-y-4">
@@ -177,9 +177,9 @@ export default function DashboardPage() {
                     </span>
                     <span className="italic">&quot;{rec.reason}&quot;</span>
                   </p>
-                  <button className="text-green-700 hover:text-green-800 font-medium text-sm transition-colors">
+                  <Link href="/career-harmony/job-search" className="text-green-700 hover:text-green-800 font-medium text-sm transition-colors">
                     View Details →
-                  </button>
+                  </Link>
                 </div>
               ))}
             </div>

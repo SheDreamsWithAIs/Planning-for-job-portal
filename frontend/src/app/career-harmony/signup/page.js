@@ -2,11 +2,13 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { User, Mail, Lock, Eye, EyeOff, Heart, Users } from 'lucide-react';
 import CareerHarmonyHeader from '@/components/CareerHarmony/Header';
 import CareerHarmonyFooter from '@/components/CareerHarmony/Footer';
 
 export default function SignupPage() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -31,7 +33,12 @@ export default function SignupPage() {
 
   const handleSubmit = () => {
     console.log('Form submitted:', formData);
-    alert('Welcome to Career Harmony! 🌱');
+    // Navigate to appropriate dashboard based on account type
+    if (formData.accountType === 'employer') {
+      router.push('/career-harmony/company-registration');
+    } else {
+      router.push('/career-harmony/dashboard');
+    }
   };
 
   return (

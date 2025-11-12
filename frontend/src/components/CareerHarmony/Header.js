@@ -14,17 +14,23 @@ export default function CareerHarmonyHeader({ currentPage = 'home' }) {
   const dashboardNavItems = [
     { label: 'Dashboard', href: '/career-harmony/dashboard', active: currentPage === 'dashboard' },
     { label: 'Job Search', href: '/career-harmony/job-search', active: currentPage === 'job-search' },
-    { label: 'Profile', href: '/career-harmony/profile', active: currentPage === 'profile' },
-    { label: 'Applications', href: '/career-harmony/applications', active: currentPage === 'applications' },
+    { label: 'Applications', href: '/career-harmony/job-applications-management', active: currentPage === 'applications' },
   ];
 
-  const isDashboard = ['dashboard', 'profile', 'job-search', 'applications'].includes(currentPage);
+  const employerNavItems = [
+    { label: 'Dashboard', href: '/career-harmony/employer-dashboard', active: currentPage === 'employer-dashboard' },
+    { label: 'Post Job', href: '/career-harmony/job-posting', active: currentPage === 'job-posting' },
+    { label: 'Applications', href: '/career-harmony/job-applications-management', active: currentPage === 'employer-applications' },
+  ];
+
+  const isDashboard = ['dashboard', 'profile', 'job-search', 'applications', 'job-application', 'chatbot'].includes(currentPage);
+  const isEmployer = ['employer-dashboard', 'job-posting', 'employer-applications', 'job-application-setup', 'company-registration', 'job-applications-management'].includes(currentPage);
 
   return (
     <header className="bg-white/80 backdrop-blur-sm border-b border-green-200 shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3">
-          <Link href="/solarpunk" className="flex items-center space-x-3">
+          <Link href="/career-harmony/home" className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-amber-500 rounded-lg flex items-center justify-center">
               <Leaf className="w-6 h-6 text-white" />
             </div>
@@ -38,6 +44,22 @@ export default function CareerHarmonyHeader({ currentPage = 'home' }) {
             {isDashboard ? (
               <>
                 {dashboardNavItems.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className={`font-medium transition-colors ${
+                      item.active
+                        ? 'text-green-800 font-semibold'
+                        : 'text-green-700 hover:text-green-800'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </>
+            ) : isEmployer ? (
+              <>
+                {employerNavItems.map((item) => (
                   <Link
                     key={item.label}
                     href={item.href}
@@ -67,7 +89,7 @@ export default function CareerHarmonyHeader({ currentPage = 'home' }) {
           </nav>
           
           <div className="flex items-center space-x-4">
-            {isDashboard ? (
+            {isDashboard || isEmployer ? (
               <>
                 <button className="text-green-700 hover:text-green-800 transition-colors">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,11 +102,11 @@ export default function CareerHarmonyHeader({ currentPage = 'home' }) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </button>
-                <div className="w-8 h-8 bg-gradient-to-r from-green-100 to-amber-100 rounded-full flex items-center justify-center">
+                <Link href="/career-harmony/profile" className="w-8 h-8 bg-gradient-to-r from-green-100 to-amber-100 rounded-full flex items-center justify-center hover:from-green-200 hover:to-amber-200 transition-colors">
                   <svg className="w-5 h-5 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
-                </div>
+                </Link>
               </>
             ) : (
               <>

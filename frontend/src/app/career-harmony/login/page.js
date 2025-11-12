@@ -2,11 +2,13 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Mail, Lock, Eye, EyeOff, Heart } from 'lucide-react';
 import CareerHarmonyHeader from '@/components/CareerHarmony/Header';
 import CareerHarmonyFooter from '@/components/CareerHarmony/Footer';
 
 export default function LoginPage() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -25,7 +27,8 @@ export default function LoginPage() {
 
   const handleSubmit = () => {
     console.log('Login submitted:', formData);
-    alert('Welcome back to Career Harmony! 🌱');
+    // Navigate to dashboard after login
+    router.push('/career-harmony/dashboard');
   };
 
   return (

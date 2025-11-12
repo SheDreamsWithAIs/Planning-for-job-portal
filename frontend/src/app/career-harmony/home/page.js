@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Search, Users, TrendingUp, ArrowRight, Building2, Award, Target, RefreshCw, Zap, Globe, Leaf, Sun } from 'lucide-react';
 
 export default function CareerHarmony() {
@@ -61,12 +62,12 @@ export default function CareerHarmony() {
             </nav>
             
             <div className="flex items-center space-x-4">
-              <button className="text-green-700 hover:text-green-800 font-medium transition-colors">
+              <Link href="/career-harmony/login" className="text-green-700 hover:text-green-800 font-medium transition-colors">
                 Sign In
-              </button>
-              <button className="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-2 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all shadow-sm">
+              </Link>
+              <Link href="/career-harmony/signup" className="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-2 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all shadow-sm">
                 Join Our Community
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -119,10 +120,10 @@ export default function CareerHarmony() {
                   />
                 </div>
                 
-                <button className="bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all flex items-center shadow-sm">
+                <Link href="/career-harmony/job-search" className="bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-green-800 transition-all flex items-center shadow-sm">
                   <Target className="w-5 h-5 mr-2" />
                   Search Future Growth Opportunities
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -249,10 +250,10 @@ export default function CareerHarmony() {
           </div>
 
           <div className="text-center mt-12">
-            <button className="bg-white/80 backdrop-blur-sm text-green-700 border-2 border-green-600 px-8 py-4 rounded-xl font-semibold hover:bg-green-600 hover:text-white transition-all flex items-center mx-auto shadow-sm">
+            <Link href="/career-harmony/job-search" className="bg-white/80 backdrop-blur-sm text-green-700 border-2 border-green-600 px-8 py-4 rounded-xl font-semibold hover:bg-green-600 hover:text-white transition-all flex items-center mx-auto shadow-sm">
               Explore More Opportunities
               <ArrowRight className="w-5 h-5 ml-2" />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -324,9 +325,9 @@ export default function CareerHarmony() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-green-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-50 transition-colors">
+            <Link href="/career-harmony/job-search" className="bg-white text-green-800 px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-50 transition-colors">
               Search Future Growth Opportunities
-            </button>
+            </Link>
           </div>
         </div>
       </section>

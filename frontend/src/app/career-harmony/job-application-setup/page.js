@@ -419,7 +419,7 @@ export default function JobApplicationSetupForm() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-amber-50 to-green-100">
-      <CareerHarmonyHeader currentPage="post-job" />
+      <CareerHarmonyHeader currentPage="job-application-setup" />
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">

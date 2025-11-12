@@ -1,10 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import CareerHarmonyHeader from '@/components/CareerHarmony/Header';
 import CareerHarmonyFooter from '@/components/CareerHarmony/Footer';
 
 export default function CompanyRegistration() {
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState('register');
   const [showSuccess, setShowSuccess] = useState(false);
 
@@ -71,7 +73,7 @@ export default function CompanyRegistration() {
     try {
       setShowSuccess(true);
       setTimeout(() => {
-        alert('In production, you would now be redirected to your employer dashboard!');
+        router.push('/career-harmony/employer-dashboard');
       }, 2000);
     } catch (error) {
       console.error('Registration error:', error);
